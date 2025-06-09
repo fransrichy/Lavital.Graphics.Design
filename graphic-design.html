@@ -1,0 +1,209 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Graphic Designings - L Nvital Investments CC</title>
+    <!-- Tailwind CSS CDN for styling -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom CSS for font and header background -->
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;700&display=swap');
+        body {
+            font-family: 'Inter', sans-serif;
+            background-color: #f0f2f5; /* Light grey background */
+            color: #333;
+        }
+        .header-bg {
+            /* Using your uploaded header-bg.jpg for the background */
+            background-image: url('Graphics.jpg');
+            background-size: cover;
+            background-position: center;
+            background-repeat: no-repeat;
+        }
+        .service-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 24px;
+        }
+        .service-item {
+            background-color: #ffffff;
+            border-radius: 12px;
+            padding: 24px;
+            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+            transition: transform 0.3s ease, box-shadow 0.3s ease;
+        }
+        .service-item:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+        }
+        .nav-link {
+            transition: color 0.3s ease, transform 0.2s ease;
+        }
+        /* Highlight color for navigation links updated to a vibrant cyan */
+        .nav-link:hover {
+            color: #00ADEF; /* Cyan from logo */
+            transform: translateY(-2px);
+        }
+        .social-button {
+            transition: background-color 0.3s ease, transform 0.2s ease;
+        }
+        .social-button:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+        }
+        /* Style for the logos in the nav bar */
+        .nav-logo-container {
+            display: flex;
+            align-items: center;
+            gap: 12px; /* Space between logos */
+        }
+        .nav-logo {
+            background-color: white;
+            padding: 4px;
+            border-radius: 8px; /* Rounded corners for the white rectangle */
+            height: 40px; /* Fixed height for consistency */
+            width: auto;
+            object-fit: contain; /* Ensures the whole logo is visible */
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+        }
+        /* Hide logos on small screens if space is tight */
+        @media (max-width: 768px) {
+            .nav-logo-container {
+                display: none; /* Hide logos on smaller screens to prioritize nav links */
+            }
+        }
+    </style>
+</head>
+<body class="min-h-screen flex flex-col">
+
+    <!-- Header Section -->
+    <header class="header-bg py-16 text-white text-center rounded-b-xl shadow-lg relative overflow-hidden">
+        <!-- Overlay for better text readability and a slightly darker, brand-aligned feel -->
+        <div class="absolute inset-0 bg-gray-900 opacity-70 z-0 rounded-b-xl"></div>
+        <div class="container mx-auto px-4 relative z-10">
+            <h1 class="text-5xl font-bold mb-2 rounded-lg">Graphic Designings</h1>
+            <p class="text-xl font-semibold mb-4 rounded-lg">Lavital Investments CC</p>
+            <p class="text-lg rounded-lg">Bringing Your Vision to Life with Creative Designs</p>
+        </div>
+    </header>
+
+    <!-- Navigation Bar - Adjusted to dark grey for contrast -->
+    <nav class="bg-gray-800 p-4 shadow-md sticky top-0 z-20 rounded-b-lg">
+        <div class="container mx-auto flex flex-col md:flex-row justify-between items-center space-y-2 md:space-y-0">
+            <!-- Navigation Links -->
+            <div class="flex flex-col md:flex-row space-y-2 md:space-x-8 md:space-y-0">
+                <a href="index.html" class="text-white nav-link text-lg font-medium px-3 py-2 rounded-md hover:bg-gray-700">Home</a>
+                <a href="graphic-design.html" class="text-white nav-link text-lg font-medium px-3 py-2 rounded-md hover:bg-gray-700">Graphic Designings</a>
+                <a href="printing-copies.html" class="text-white nav-link text-lg font-medium px-3 py-2 rounded-md hover:bg-gray-700">Printing & Copies</a>
+                <a href="other-services.html" class="text-white nav-link text-lg font-medium px-3 py-2 rounded-md hover:bg-gray-700">Other Services</a>
+            </div>
+
+            <!-- Logos on the right side of the nav bar -->
+            <div class="nav-logo-container">
+                <img src="INVESTMENTS LOGO.png" alt="Investments Logo" class="nav-logo">
+                <img src="PROMOTION LOGO.jpg" alt="Promotion Logo" class="nav-logo">
+                <img src="LAVITAL NEW LOGO PNG.png" alt="Lavital Graphic Design Studio Logo" class="nav-logo">
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content Area -->
+    <main class="container mx-auto px-4 py-8 flex-grow">
+        <div class="bg-white p-8 rounded-xl shadow-xl mb-8">
+            <h2 class="text-4xl font-extrabold text-center text-gray-800 mb-6">Our Graphic Design Expertise</h2>
+            <p class="text-lg text-gray-700 leading-relaxed text-center max-w-3xl mx-auto">
+                Our team of skilled designers is here to craft visually stunning and impactful designs that perfectly represent your brand and messages. From conceptualization to final artwork, we ensure every detail aligns with your vision.
+            </p>
+        </div>
+
+        <!-- Services List -->
+        <section class="service-grid">
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Logo Designs</h3>
+                <p class="text-gray-600">Create a memorable and unique brand identity with a custom-designed logo that stands out.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Company Profiles</h3>
+                <p class="text-gray-600">Present your company's story, values, and achievements professionally with a well-designed profile.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Flyer and Poster Design</h3>
+                <p class="text-gray-600">Grab attention and promote your events or products effectively with captivating flyers and posters.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Business Cards</h3>
+                <p class="text-gray-600">Make a lasting first impression with professionally designed and printed business cards.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Social Media Graphics</h3>
+                <p class="text-gray-600">Enhance your online presence with engaging graphics tailored for various social media platforms.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Menu Design</h3>
+                <p class="text-gray-600">Attractive and clear menu designs for restaurants, cafes, and other food service businesses.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Packaging Design</h3>
+                <p class="text-gray-600">Innovative and functional packaging designs that protect your products and appeal to customers.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Signage & Banners</h3>
+                <p class="text-gray-600">Create highly visible and impactful signs and banners for your business or event.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Event Invitations</h3>
+                <p class="text-gray-600">Beautifully designed invitations that set the tone for your special events and gatherings.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Programs Designs</h3>
+                <p class="text-gray-600">Professionally designed programs for conferences, ceremonies, and performances.</p>
+            </div>
+            <div class="service-item">
+                <h3 class="text-2xl font-semibold text-gray-800 mb-3">Certificates & Awards</h3>
+                <p class="text-gray-600">Elegant and custom-designed certificates and awards for recognition and achievement.</p>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section class="bg-white p-8 rounded-xl shadow-xl text-center mt-8">
+            <h2 class="text-4xl font-extrabold text-gray-800 mb-6">Ready to Start Your Design Project?</h2>
+            <p class="text-lg text-gray-700 leading-relaxed max-w-3xl mx-auto mb-8">
+                Contact us today to discuss your graphic design needs. We're eager to help you create something extraordinary!
+            </p>
+            <div class="flex flex-col md:flex-row justify-center items-center gap-6 mb-8">
+                <p class="text-xl font-medium"><strong>Phone:</strong> <a href="tel:+264812514919" class="text-blue-600 hover:underline">+264 81 251 4919</a></p>
+                <p class="text-xl font-medium"><strong>Email:</strong> <a href="mailto:lavitalize@gmail.com" class="text-blue-600 hover:underline">lavitalize@gmail.com</a></p>
+                <p class="text-xl font-medium"><strong>Address:</strong> Windhoek CBD, a/d 228 Werner List Street</p>
+            </div>
+            <div class="flex justify-center flex-wrap gap-4">
+                <a href="https://wa.me/264852514919?text=Hello%20L%20Nvital%20Investments%2C%20I'd%20like%20to%20inquire%20about%20your%20graphic%20design%20services." target="_blank" class="social-button bg-green-500 hover:bg-green-600 text-white font-bold py-3 px-6 rounded-full text-lg shadow-md flex items-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12.04 2C7.34 2 3.59 5.76 3.59 10.45c0 1.95.66 3.75 1.76 5.14L3 21l5.77-1.51c1.3-.76 2.85-1.16 4.27-1.16C16.74 18.33 20.5 14.57 20.5 9.88S16.74 2 12.04 2zm3.87 13.06c-.19.34-.78.48-1.07.3-.29-.19-.9-.37-1.74-.82-.84-.44-1.63-1.04-2.26-1.57-.63-.53-1.08-1.04-1.35-1.39-.28-.35-.03-.54.21-.78.21-.21.48-.52.7-.78.21-.26.28-.48.42-.76.14-.28.07-.52-.03-.7-.1-.19-.94-2.27-1.29-3.09-.34-.82-.7-1.7-.38-1.73.32-.03.7-.03 1.07-.03.36 0 .74.07.95.14.22.07.3.1.48.24.19.14.49.49.71.78.22.29.35.48.48.64.14.16.29.35.42.54.13.19.26.39.38.54.11.16.2.29.3.38.1.1.1.13.07.2-.03.07-.44.22-.64.44-.2.22-.4.44-.64.64-.24.2-.48.4-.7.64-.22.24-.48.44-.64.64-.16.2-.26.32-.38.48-.12.16-.29.35-.42.48-.13.13-.2.24-.26.38-.07.14-.07.24-.03.35.03.11.2.26.42.44.22.19.42.29.64.38.21.09.42.14.64.19.21.05.42.09.64.09.22 0 .42-.03.64-.07.22-.04.4-.1.6-.14.2-.05.4-.1.6-.14.2-.04.4-.07.6-.07.2-.07.39-.07.57-.03.19.04.4.1.6.14.2.04.4.07.6.14.19.04.34.07.48.14.14.07.26.14.38.2.12.07.22.14.3.2.08.07.14.14.19.2.05.06.07.14.07.2-.03.07-.44.22-.64.44-.2.22-.4.44-.64.64-.24.2-.48.4-.7.64-.22.24-.48.44-.64.64-.16.2-.26.32-.38.48-.12.16-.29.35-.42.48-.13.13-.2.24-.26.38-.07.14-.07.24-.03.35.03.11.2.26.42.44.22.19.42.29.64.38.21.09.42.14.64.19.21.05.42.09.64.09.22 0 .42-.03.64-.07.22-.04.4-.1.6-.14.2-.05.4-.1.6-.14.2-.04.4-.07.6-.07.2-.07.39-.07.57-.03.19.04.4.1.6.14.2.04.4.07.6.14.19.04.34.07.48.14.14.07.26.14.38.2.12.07.22.14.3.2.08.07.14.14.19.2.05.06.07.14.07.2-.03.07-.44.22-.64.44-.2.22-.4.44-.64.64-.24.2-.48.4-.7.64-.22.24-.48.44-.64.64-.16.2-.26.32-.38.48-.12.16-.29.35-.42.48z"/>
+                    </svg>
+                    <span>WhatsApp Us</span>
+                </a>
+                <a href="https://www.facebook.com/LavitalPrintsDesigns" target="_blank" class="social-button bg-blue-700 hover:bg-blue-800 text-white font-bold py-3 px-6 rounded-full text-lg shadow-md flex items-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M12 2C6.477 2 2 6.477 2 12c0 5.01 3.657 9.177 8.438 9.877v-6.985h-2.54V12h2.54V9.797c0-2.505 1.534-3.875 3.77-3.875 1.099 0 2.055.081 2.327.119v2.663h-1.576c-1.237 0-1.478.587-1.478 1.45V12h2.946l-.426 2.892h-2.52V21.877C18.343 21.177 22 17.01 22 12c0-5.523-4.477-10-10-10z"/>
+                    </svg>
+                    <span>Facebook</span>
+                </a>
+                <a href="https://www.instagram.com/LavitalPrintsDesigns" target="_blank" class="social-button bg-fuchsia-600 hover:bg-fuchsia-700 text-white font-bold py-3 px-6 rounded-full text-lg shadow-md flex items-center space-x-2">
+                    <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+                        <path d="M7.8 2h8.4C19.4 2 22 4.6 22 7.8v8.4c0 3.2-2.6 5.8-5.8 5.8H7.8C4.6 22 2 19.4 2 16.2V7.8C2 4.6 4.6 2 7.8 2zm-.2 2A2.88 2.88 0 005 7.6v8.8A2.88 2.88 0 007.6 19h8.8A2.88 2.88 0 0019 16.4V7.6A2.88 2.88 0 0016.4 5H7.6zM12 7a5 5 0 100 10 5 5 0 000-10zm0 2a3 3 0 110 6 3 3 0 010-6zm6.5-3.3a1.2 1.2 0 100 2.4 1.2 1.2 0 000-2.4z"/>
+                    </svg>
+                    <span>Instagram</span>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer Section - Remains dark for consistency -->
+    <footer class="bg-gray-800 text-white text-center p-6 mt-8 rounded-t-xl shadow-inner">
+        <p>&copy; 2024 Lavital Investments CC. All rights reserved.</p>
+        <p>Windhoek CBD, a/d 228 Werner List Street</p>
+    </footer>
+
+</body>
+</html>
